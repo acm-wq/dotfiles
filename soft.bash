@@ -23,6 +23,7 @@ sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/ya
 
 yay -S \
     postman \
+    ttf-jetbrains-mono-nerd \
 
 # install asdf
 git clone https://aur.archlinux.org/asdf-vm.git && cd asdf-vm && makepkg -si
