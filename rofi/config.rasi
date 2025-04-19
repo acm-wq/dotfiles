@@ -3,6 +3,6 @@ configuration {
   combi-modes: [ window, drun, run ];
 }
 
-@theme "tokyonight"
+@theme "catppuccin_mocha"
  
 /* Insert theme modifications after this */

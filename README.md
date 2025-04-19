@@ -1,11 +1,6 @@
 -- --
 My config 
-Theme: TokyoNight 
+Theme: Catppuccin 
 
-
-Screenshot:
-![Main](preview/main.png)
-
-![Preview](preview/preview.png)
-
-![Code](preview/code.png)
+...
+-- --

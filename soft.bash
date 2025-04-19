@@ -16,7 +16,8 @@ sudo pacman -S \
     docker \
     neovim \
     telegram-desktop \
-    libreoffice \
+    nautilus \
+    screenshot \
 
 # yay install
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
@@ -45,3 +46,7 @@ asdf global python latest
 asdf plugin add go 
 asdf install go latest
 asdf global go latest
+
+asdf plugin add lua
+asdf install lua latest
+asdf global lua latest
