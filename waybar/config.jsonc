@@ -1,5 +1,6 @@
 {
   "layer": "top", // Waybar on highest layer so tooltips go over windows
+  "output": ["DP-1"],
   "height": 36, // Set height to avoid jumping due to active workspace indicator
   "margin-top": 8,
   "margin-left": 11,
@@ -13,32 +14,31 @@
     "clock"
   ], // Set modules for the center of the bar
   "modules-right": [
-    "tray",
-    "temperature",
     "cpu",
     "memory",
+    "tray",
     "pulseaudio"
   ], // Set modules for the right of the bar
   // Modules configuration
   "clock": {
-    "format": "<span color=\"#c0caf5\"> </span>{:%I:%M %p}",
-    "format-alt": "<span color=\"#c0caf5\"> </span>{:%A, %B %d}",
+    "format": "<span color=\"#c0caf5\" font='13'> </span>{:%I:%M %p}",
+    "format-alt": "<span color=\"#c0caf5\" font='13'> </span>{:%A, %B %d}",
     "interval": 1
   },
   "cpu": {
-    "format": "<span color=\"#c0caf5\"> </span>{}%",
+    "format": "<span color=\"#c0caf5\" font='10'>/ C {}%</span>",
     "interval": 2
   },
   "memory": {
-    "format": "<span color=\"#c0caf5\"> </span>{}%",
-    "format-alt": "<span color=\"#c0caf5\"> </span>{used}/{total} GiB",
+    "format": "<span color=\"#c0caf5\" font='10'>/ M {}</span>%",
+    "format-alt": "<span color=\"#c0caf5\" font='8'>/ M {used}/{total} GiB</span>",
     "interval": 5
   },
   "temperature": {
     "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
     "critical-threshold": 80,
-    "format": "<span color=\"#c0caf5\"> </span>{temperatureC}°C",
-    "format-critical": "<span> </span>{temperatureC}°C",
+    "format": "<span color=\"#c0caf5\" font='13'> </span>{temperatureC}°C",
+    "format-critical": "<span font='13'> </span>{temperatureC}°C",
     "interval": 2
   },
   "pulseaudio": {
@@ -85,13 +85,13 @@
     "format": "{icon}",
     "on-click": "activate",
     "format-icons": {
-      "urgent": "<span> </span>",
-      "active": "<span> </span>",
-      "default": "<span>󰧞</span>"
-    }
+      "urgent": "<span font='13'></span>",
+      "active": "<span font='13'>󰓎</span>",
+      "default": "<span font='13'></span>"
+    },
   },
   "custom/archicon": {
-    "format": "<span> 󰣇</span>",
+    "format": "<span font='15'> 󰣇</span>",
     "on-click": "rofi -show run",
     "tooltip": false
   }
