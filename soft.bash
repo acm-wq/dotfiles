@@ -18,6 +18,8 @@ sudo pacman -S \
     telegram-desktop \
     nautilus \
     screenshot \
+    rofi-emoji \
+    pavucontrol \
 
 # yay install
 sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
