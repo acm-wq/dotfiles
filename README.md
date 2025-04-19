@@ -3,7 +3,7 @@
 
 This is my **dotfile**
 
-ngredients: Catppuccin, Hyprland, Waybar, Rofi, Firefox...
+Ingredients: Catppuccin, Hyprland, Waybar, Rofi, Firefox...
 
 ## Install
 
