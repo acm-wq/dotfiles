@@ -71,6 +71,13 @@ asdf install lua latest && \
 asdf global lua latest
 ```
 
+In neovim
+
+```bash
+:TSInstall ruby lua python javascript html css go
+
+```
+
 ## Preview:
 
 ![](preview/main.png)
